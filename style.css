@@ -1,0 +1,106 @@
+* {
+    margin: 0;
+    font-family: inherit;
+    box-sizing: border-box;
+}
+
+.calContainer {
+    display: flex;
+    margin: auto;
+    height: 100vh;
+    background-color: #f2f2f2;
+}
+
+.calender {
+    margin: auto;
+    width: 600px;
+    box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2), 0 6px 20px 0 rgba(0, 0, 0, 0.19);
+    border-radius: 12px;
+}
+
+.month {
+    display: flex;
+    justify-content: space-between;
+    text-align: center;
+    align-items: center;
+    width: 100%;
+    padding: 40px 30px;
+    background-color: rgb(176, 27, 149);
+}
+
+
+#month {
+    font-size: 50px;
+}
+
+.prev,
+.next {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+    width: 50px;
+    height: 50px;
+    border-radius: 50%;
+    cursor: pointer;
+}
+
+.prev:hover,
+.next:hover {
+    background-color: rgb(171, 4, 140);
+}
+
+.weeks {
+    display: flex;
+    background-color: rgb(190, 9, 155);
+    padding: 5px 5px;
+}
+
+.weeks .weekDays {
+    width: 14.28%;
+    font-size: 18px;
+    text-align: center;
+}
+
+.calBodyWeek {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    text-align: center;
+    padding: 7px 0;
+    /* border: 5px solid black; */
+}
+
+.calBodyDays {
+    display: flex;
+    flex-direction: column;
+    width: 14.28%;
+    margin-bottom: 5px;
+    padding: 10px 0;
+    transition: all 0.3s;
+    font-size: 18px;
+    /* border: 5px solid brown; */
+}
+
+.prevMonth,
+.nextMonth {
+    /* background-color: #A9A9A9; */
+    font-weight: 400;
+    color: grey;
+}
+
+
+
+.calBodyDays:hover {
+    background-color: rgb(176, 27, 149);
+    cursor: pointer;
+}
+
+#todayDate {
+    font-size: 20px;
+    font-weight: 400;
+}
+
+.todayDate{
+    background-color: rgb(176, 27, 149);
+}
